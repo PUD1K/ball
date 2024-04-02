@@ -1,0 +1,15 @@
+.ball {
+    animation: jumpAnimation 0.5s ease-in-out; /* Применяем анимацию jumpAnimation */
+}
+
+@keyframes jumpAnimation {
+    0% {
+        transform: translateY(0); /* Начальное положение - без сдвига по вертикали */
+    }
+    50% {
+        transform: translateY(-20px); /* Сдвигаем мячик вверх на 20px на половине анимации */
+    }
+    100% {
+        transform: translateY(0); /* Возвращаем мячик в исходное положение */
+    }
+}
